@@ -1,0 +1,37 @@
+@import "./utility";
+
+.search-bar {
+  width: auto;
+  height: 2em;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  place-content: center;
+  padding: 2px;
+
+  & form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+  }
+  & .search-input {
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: large;
+  }
+  & .search-button {
+    height: 100%;
+    padding: 0px 24px;
+    border-radius: 30px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: none;
+    font-size: large;
+  }
+}

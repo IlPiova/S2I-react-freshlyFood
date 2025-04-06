@@ -1,0 +1,62 @@
+@import "./utility";
+.cards-container {
+  margin-top: 24px;
+  display: flex;
+  place-content: center;
+  align-items: stretch;
+  flex-flow: wrap row;
+  gap: 24px;
+
+  .card {
+    height: 20em;
+    width: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding-left: 8px;
+    border-radius: 15px;
+    background-color: $secondary-color;
+
+    .general-info-container {
+      display: flex;
+      justify-content: space-around;
+      justify-items: center;
+      gap: 4px;
+
+      .info-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 2px 0;
+        .info-icon {
+          width: 30%;
+          height: auto;
+        }
+        .info-number {
+          font-size: 0.6em;
+          color: $primary-color;
+          margin: 0px;
+        }
+      }
+    }
+    .recipe-title {
+      font-size: 1.2em;
+      color: $primary-color;
+    }
+    .recipe-button {
+      border: none;
+      border-radius: 20px;
+      padding: 2px 24px;
+      margin-bottom: 24px;
+      color: $primary-color;
+      background-color: $secondary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+    }
+  }
+}
