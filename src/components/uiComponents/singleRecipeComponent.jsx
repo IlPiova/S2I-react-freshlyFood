@@ -85,9 +85,9 @@ function SingleRecipeComponent() {
           ></p>
         </div>
 
-        <div className="summary-container">
+        <div>
           <h2 className="subtitle">Ingredients</h2>
-          <div>
+          <div className="ingredients-container">
             {recipeData.extendedIngredients &&
               extendIngredints(recipeData.extendedIngredients)}
           </div>

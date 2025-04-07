@@ -45,7 +45,7 @@ function RecipesReq() {
     <>
       <Navbar />
       <Header />
-      {error && <div className="error">{error}</div>}
+      {error && !loading && <div className="error">{error}</div>}
       {loading && <div className="loader"></div>}{" "}
       {recipes && <Cards data={recipes} />}
       {randomRecipes && <h2 className="subtitle">GET INSPIRED</h2>}

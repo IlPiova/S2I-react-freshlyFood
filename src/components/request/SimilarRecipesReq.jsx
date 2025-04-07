@@ -36,7 +36,7 @@ function SimilarRecipeReq({ recipeId }) {
   }, [recipeId]);
   return (
     <>
-      {error && <div className="error">{error}</div>}
+      {error && !loading && <div className="error">{error}</div>}
       {loading && <div className="loader"></div>}
       {similarRecipes && <h2 className="subtitle">Similar recipes</h2>}
       {similarRecipes && <Cards data={similarRecipes} />}

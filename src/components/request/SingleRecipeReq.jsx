@@ -20,16 +20,11 @@ function SingleRecipeReq() {
     setError("");
     setLoading(true);
 
-    if (recipeData?.id === parseInt(recipeId)) {
-      setLoading(false);
-      return;
-    }
-
     axios
       .get(`${baseUrl}&apiKey=${apiKey}`)
       .then((response) => {
-        if (data?.id) {
-          setRecipeData(response);
+        if (response?.data?.id) {
+          setRecipeData(response.data);
         } else {
           throw new Error("Recipe not available, try another recipe");
         }
@@ -41,7 +36,7 @@ function SingleRecipeReq() {
   }, [recipeId]);
   return (
     <>
-      {error && <div className="error">{error}</div>}
+      {error && !loading && <div className="error">{error}</div>}
       {loading && <div className="loader"></div>}
       {recipeData && <SingleRecipeComponent />}
       {recipeData && <SimilarRecipeReq recipeId={recipeId} />}

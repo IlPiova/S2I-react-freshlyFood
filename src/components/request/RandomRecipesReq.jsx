@@ -37,7 +37,7 @@ function RandomRecipesReq() {
   }, []);
   return (
     <>
-      {error && <div className="error">{error}</div>}
+      {error && !loading && <div className="error">{error}</div>}
       {loading && <div className="loader"></div>}
       {randomRecipes && <h2 className="subtitle">GET INSPIRED</h2>}
       {randomRecipes && <Cards data={randomRecipes.recipes} />}
