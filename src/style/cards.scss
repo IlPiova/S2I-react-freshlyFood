@@ -20,8 +20,7 @@
 
     .general-info-container {
       display: flex;
-      justify-content: space-around;
-      justify-items: center;
+      justify-content: flex-start;
       gap: 4px;
 
       .info-container {
@@ -46,7 +45,7 @@
       font-size: 1.2em;
       color: $primary-color;
       font-family: "Milk-And-Honey";
-      letter-spacing: 0.05em;
+      letter-spacing: 0.15em;
     }
     .recipe-button {
       border: none;

@@ -9,6 +9,12 @@ $secondary-error-color: #f4a261;
     url("../assets/fonts/Milk\ And\ Honey.otf") format("opentype");
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 p,
 li {
   font-family: "Inter", sans-serif;
@@ -23,4 +29,113 @@ li {
   font-weight: 600;
   font-style: normal;
   color: $secondary-color;
+}
+
+.title {
+  font-family: "Milk-And-Honey";
+  color: $secondary-color;
+  letter-spacing: 0.1em;
+  font-size: 3.8em;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  font-family: "Milk-And-Honey";
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0.2em;
+  letter-spacing: 0.1em;
+
+  color: $secondary-color;
+}
+
+.error {
+  width: 65%;
+  height: auto;
+  padding: 24px 0px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: $secondary-error-color;
+  color: $error-color;
+  border: $error-color 2px solid;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.loader {
+  align-self: center;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 0 0 100px 100px;
+  border: 5px solid #538a2d;
+  border-top: 0;
+  box-sizing: border-box;
+  background: radial-gradient(
+      farthest-side at top,
+      #0000 calc(100% - 5px),
+      #e7ef9d calc(100% - 4px)
+    ),
+    radial-gradient(2px 3px, #5c4037 89%, #0000) 0 0/17px 12px, #ff1643;
+  --c: radial-gradient(farthest-side, #000 94%, #0000);
+  -webkit-mask: linear-gradient(#0000 0 0), var(--c) 12px -8px,
+    var(--c) 29px -8px, var(--c) 45px -6px, var(--c) 22px -2px,
+    var(--c) 34px 6px, var(--c) 21px 6px, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0), var(--c) 12px -8px, var(--c) 29px -8px,
+    var(--c) 45px -6px, var(--c) 22px -2px, var(--c) 34px 6px, var(--c) 21px 6px,
+    linear-gradient(#0000 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude, add, add, add, add, add, add;
+  -webkit-mask-repeat: no-repeat;
+  animation: l8 3s infinite;
+}
+@keyframes l8 {
+  0% {
+    -webkit-mask-size: auto, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+  15% {
+    -webkit-mask-size: auto, 20px 20px, 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+  30% {
+    -webkit-mask-size: auto, 20px 20px, 20px 20px, 0 0, 0 0, 0 0, 0 0;
+  }
+  45% {
+    -webkit-mask-size: auto, 20px 20px, 20px 20px, 20px 20px, 0 0, 0 0, 0 0;
+  }
+  60% {
+    -webkit-mask-size: auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px, 0 0,
+      0 0;
+  }
+  75% {
+    -webkit-mask-size: auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px,
+      20px 20px, 0 0;
+  }
+  90%,
+  100% {
+    -webkit-mask-size: auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px,
+      20px 20px, 20px 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .title {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .title {
+    font-size: 5em;
+  }
 }

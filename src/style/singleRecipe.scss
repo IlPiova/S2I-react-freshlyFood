@@ -70,20 +70,23 @@
   .summary-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
   }
   .recipe-html {
     line-height: 1.25em;
     text-align: justify;
     margin-top: 0px;
+    width: 100%;
 
     b {
       color: $secondary-color;
     }
   }
   .ingredients-list {
-    width: 100vw;
-    margin-left: 52px;
+    width: 100%;
+    // margin-left: 52px;
   }
 }
 

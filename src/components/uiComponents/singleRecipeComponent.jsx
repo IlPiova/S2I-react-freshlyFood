@@ -7,7 +7,7 @@ import vegan from "../../assets/images/vegan.png";
 
 import "../../style/singleRecipe.scss";
 import Navbar from "./Navbar";
-import ImageCard from "./IngredientsWidget";
+import ImageCard from "./ImageCard";
 
 function arrReader(data) {
   return (
@@ -33,60 +33,6 @@ function extendIngredints(ingredients) {
     </ul>
   );
 }
-/*id
-:
-1052050
-aisle
-:
-"Baking"
-image
-:
-"vanilla.jpg"
-consistency
-:
-"SOLID"
-name
-:
-"vanilla"
-nameClean
-:
-"vanilla"
-original
-:
-"1 teaspoon Vanilla"
-originalName
-:
-"Vanilla"
-amount
-:
-1
-unit
-:
-"teaspoon"
-meta
-:
-[]
-
-measures
-:
-{metric: {…}, us: {…}}
-
-us
-:
-{amount: 1, unitLong: "teaspoon", unitShort: "tsp"}
-
-metric
-:
-{amount: 1, unitLong: "teaspoon", unitShort: "tsp"}
-amount
-:
-1
-unitShort
-:
-"tsp"
-unitLong
-:
-"teaspoon" */
 
 function SingleRecipeComponent() {
   const { recipeData } = useContext(SingleRecipeContext);
@@ -95,7 +41,6 @@ function SingleRecipeComponent() {
       <Navbar />
       <div className="single-recipe-container">
         <h1 className="title">{recipeData.title}</h1>
-        {/* <img src={recipeData.image}  /> */}
         <ImageCard id={recipeData.id} />
 
         <div className="info-container">
