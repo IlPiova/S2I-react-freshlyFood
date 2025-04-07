@@ -1,4 +1,26 @@
-$primary-color: #cae7e3;
+$primary-color: white;
 $secondary-color: #2a9d8f;
 $error-color: #e76f51;
 $secondary-error-color: #f4a261;
+
+@font-face {
+  font-family: "Milk-And-Honey";
+  src: local("Milk And Honey"),
+    url("../assets/fonts/Milk\ And\ Honey.otf") format("opentype");
+}
+
+p,
+li {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: $secondary-color;
+}

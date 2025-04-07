@@ -1,0 +1,32 @@
+@import "./utility";
+.navbar {
+  background: $primary-color;
+  padding: 4px 24px;
+  width: 100%;
+  position: fixed;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  .logo-container {
+    height: 100%;
+
+    .logo {
+      height: 100%;
+      border-radius: 100%;
+    }
+  }
+  .navbar-title {
+    font-family: "Milk-And-Honey";
+    color: $secondary-color;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    text-align: center;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+}

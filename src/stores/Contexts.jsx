@@ -51,6 +51,17 @@ export const SingleRecipeProvider = ({ children }) => {
   );
 };
 
+export const ImageCardContext = createContext({});
+
+export const ImageCardProvider = ({ children }) => {
+  const [imageCard, setImageCard] = useState(null);
+  return (
+    <ImageCardContext.Provider value={{ imageCard, setImageCard }}>
+      {children}
+    </ImageCardContext.Provider>
+  );
+};
+
 export const SimilarRecipesContext = createContext({});
 
 export const SimilarRecipesProvider = ({ children }) => {

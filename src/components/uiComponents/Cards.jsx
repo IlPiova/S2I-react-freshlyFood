@@ -22,31 +22,29 @@ function Cards({ data }) {
             backgroundSize: "cover",
           }}
         >
-          <div className="general-info-container">
-            <div className="info-container">
-              <img
-                src={servingsIcon}
-                alt="Servings icon"
-                className="info-icon"
-              />
-              <p className="info-number">{recipe.servings}</p>
-            </div>
+          <Link className="link" to={`/recipes/${recipe.id}`}>
+            <div className="general-info-container">
+              <div className="info-container">
+                <img
+                  src={servingsIcon}
+                  alt="Servings icon"
+                  className="info-icon"
+                />
+                <p className="info-number">{recipe.servings}</p>
+              </div>
 
-            <div className="info-container">
-              <img
-                src={cookingTimeIcon}
-                alt="Cooking time icon"
-                className="info-icon"
-              />
-              <p className="info-number">{recipe.readyInMinutes}</p>
+              <div className="info-container">
+                <img
+                  src={cookingTimeIcon}
+                  alt="Cooking time icon"
+                  className="info-icon"
+                />
+                <p className="info-number">{recipe.readyInMinutes}</p>
+              </div>
             </div>
-          </div>
-          <h3 className="recipe-title">{recipe.title}</h3>
-          <button className="recipe-button">
-            <Link className="link" to={`/recipes/${recipe.id}`}>
-              Recipe
-            </Link>
-          </button>
+            <h3 className="recipe-title">{recipe.title}</h3>
+            <button className="recipe-button">Recipe</button>
+          </Link>
         </div>
       ))}
     </div>

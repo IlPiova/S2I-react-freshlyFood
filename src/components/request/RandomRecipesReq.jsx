@@ -22,7 +22,7 @@ function RandomRecipesReq() {
 
   return (
     <>
-      {randomRecipes && <h2>GET INSPIRED</h2>}
+      {randomRecipes && <h2 className="subtitle">GET INSPIRED</h2>}
       {randomRecipes && <Cards data={randomRecipes.recipes} />}
     </>
   );

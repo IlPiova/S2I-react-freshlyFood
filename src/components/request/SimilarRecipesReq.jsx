@@ -29,7 +29,7 @@ function SimilarRecipeReq({ recipeId }) {
   }, [recipeId]);
   return (
     <>
-      {similarRecipes && <h2>Similar recipes</h2>}
+      {similarRecipes && <h2 className="subtitle">Similar recipes</h2>}
       {similarRecipes && <Cards data={similarRecipes} />}
     </>
   );
