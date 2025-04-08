@@ -21,7 +21,7 @@ function SimilarRecipeReq({ recipeId }) {
     setLoading(true);
     axios
       .get(
-        `${baseUrl}number=2&include-tags=vegetarian&apiKey=${apiKey}&addRecipeInformation=true`
+        `${baseUrl}number=10&include-tags=vegetarian&apiKey=${apiKey}&addRecipeInformation=true`
       )
       .then((response) => {
         if (response.data?.length) {
@@ -38,8 +38,10 @@ function SimilarRecipeReq({ recipeId }) {
     <>
       {error && !loading && <div className="error">{error}</div>}
       {loading && <div className="loader"></div>}
-      {similarRecipes && <h2 className="subtitle">Similar recipes</h2>}
-      {similarRecipes && <Cards data={similarRecipes} />}
+      {similarRecipes && !loading && (
+        <h2 className="subtitle">Similar recipes</h2>
+      )}
+      {similarRecipes && !loading && <Cards data={similarRecipes} />}
     </>
   );
 }

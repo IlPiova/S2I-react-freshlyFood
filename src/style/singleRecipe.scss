@@ -69,6 +69,9 @@
     text-align: justify;
     margin-top: 0px;
     width: 100%;
+    ol {
+      margin: 0px 24px;
+    }
 
     b {
       color: $secondary-color;
@@ -78,10 +81,8 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 0px;
     .ingredients-list {
       width: 100%;
-      margin: 0px;
     }
   }
 }

@@ -38,8 +38,8 @@ function SingleRecipeReq() {
     <>
       {error && !loading && <div className="error">{error}</div>}
       {loading && <div className="loader"></div>}
-      {recipeData && <SingleRecipeComponent />}
-      {recipeData && <SimilarRecipeReq recipeId={recipeId} />}
+      {recipeData && !loading && <SingleRecipeComponent />}
+      {recipeData && !loading && <SimilarRecipeReq recipeId={recipeId} />}
     </>
   );
 }

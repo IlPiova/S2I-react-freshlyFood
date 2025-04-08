@@ -1,12 +1,48 @@
-# React + Vite
+# Freshly Food
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Indice
 
-Currently, two official plugins are available:
+- [Il progetto](#il-progetto)
+- [Perché ho scelto questo progetto](#perché-ho-scelto-questo-progetto)
+- [Come provarlo?](#come-provarlo)
+- [Strumenti utilizzati](#strumenti-utilizzati)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Il progetto
 
-## Expanding the ESLint configuration
+Come quinto progetto pratico per il corso di Start2Impact, ho sviluppato un sito di ricette vegetariane utilizzando React e le [api Spoonacular](https://spoonacular.com/food-api/docs).
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Il progetto richiede:
+
+- Una barra di ricerca che permetta di cercare tutte le ricette vegetariane.
+- Ogni ricetta cercata deve mostrare almeno il titolo e l’immagine di copertina.
+- Cliccando su una ricetta, si accede a una pagina dedicata, dove vengono mostrate ulteriori informazioni.
+- UI e UX semplici e facili da usare.
+- Struttura dell’app organizzata e comprensibile.
+- Design responsive.
+
+Puoi testarlo a [questo link](https://ilpiova-freshlyfood.netlify.app)
+
+---
+
+## Perché ho scelto questo progetto
+
+Ho scelto questo progetto sia perché ritengo possa essermi utile per migliorare nello sviluppo di UI e UX, sia perché mi è sembrato abbastanza complesso da risultare stimolante.
+
+---
+
+## Come provarlo?
+
+Basta collegarsi a **[questo link](https://ilpiova-freshlyfood.netlify.app)** per vederlo in azione.
+
+---
+
+## Strumenti utilizzati
+
+- **React**
+  - React Router
+  - Context API
+  - Axios
+  - React Hooks
+- Sass (SCSS)
+- Vite
+- [API Spoonacular](https://spoonacular.com/food-api/docs)

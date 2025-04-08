@@ -25,7 +25,7 @@ function RecipesReq() {
     if (!recipeName) return;
     axios
       .get(
-        `${baseUrl}apiKey=${apiKey}&query=${recipeName}&number=5&diet=vegetarian&addRecipeInformation=true `
+        `${baseUrl}apiKey=${apiKey}&query=${recipeName}&number=30&diet=vegetarian&addRecipeInformation=true `
       )
       .then((response) => {
         if (response.data?.results?.length) {
@@ -47,9 +47,9 @@ function RecipesReq() {
       <Header />
       {error && !loading && <div className="error">{error}</div>}
       {loading && <div className="loader"></div>}{" "}
-      {recipes && <Cards data={recipes} />}
-      {randomRecipes && <h2 className="subtitle">GET INSPIRED</h2>}
-      {randomRecipes && <Cards data={randomRecipes.recipes} />}
+      {recipes && !loading && <Cards data={recipes} />}
+      {randomRecipes && !loading && <h2 className="subtitle">GET INSPIRED</h2>}
+      {randomRecipes && !loading && <Cards data={randomRecipes.recipes} />}
     </>
   );
 }

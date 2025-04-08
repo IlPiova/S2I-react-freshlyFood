@@ -11,7 +11,7 @@ function RandomRecipesReq() {
   const [error, setError] = useState("");
 
   const baseUrl =
-    "https://api.spoonacular.com/recipes/random?number=2&include-tags=vegetarian";
+    "https://api.spoonacular.com/recipes/random?number=10&include-tags=vegetarian";
 
   const { randomRecipes, setRandomRecipes } = useContext(RandomRecipesContext);
   useEffect(() => {
@@ -39,8 +39,8 @@ function RandomRecipesReq() {
     <>
       {error && !loading && <div className="error">{error}</div>}
       {loading && <div className="loader"></div>}
-      {randomRecipes && <h2 className="subtitle">GET INSPIRED</h2>}
-      {randomRecipes && <Cards data={randomRecipes.recipes} />}
+      {randomRecipes && !loading && <h2 className="subtitle">GET INSPIRED</h2>}
+      {randomRecipes && !loading && <Cards data={randomRecipes.recipes} />}
     </>
   );
 }
