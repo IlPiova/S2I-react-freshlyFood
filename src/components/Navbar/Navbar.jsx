@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo-freshly-food.png";
 
-import "../../style/navbar.scss";
+import "./navbar.scss";
 
 function Navbar() {
   return (

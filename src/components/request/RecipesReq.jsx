@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
-import Cards from "../uiComponents/Cards";
-import Header from "../uiComponents/Home/Header";
-import Navbar from "../uiComponents/Navbar";
+import Cards from "../Cards/Cards";
+import Header from "../Header";
+import Navbar from "../Navbar/Navbar";
 import {
   RecipeSearchContext,
   RecipesContext,

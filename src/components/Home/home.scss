@@ -1,4 +1,4 @@
-@import "./utility";
+@import "../../style/utility";
 
 body {
   background-color: $primary-color;
@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("../assets/images/header-cover-image.png") no-repeat;
+  background: url("../../assets/images/header-cover-image.png") no-repeat;
   background-position: 60% 35%;
   background-size: cover;
 

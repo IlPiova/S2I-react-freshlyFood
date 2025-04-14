@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 
-import Cards from "../uiComponents/Cards";
+import Cards from "../Cards/Cards";
 import { RandomRecipesContext } from "../../stores/Contexts";
 
 function RandomRecipesReq() {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../style/cards.scss";
+import "./cards.scss";
 
 import servingsIcon from "../../assets/icons/servings-icon.svg";
 import cookingTimeIcon from "../../assets/icons/timer-icon.svg";

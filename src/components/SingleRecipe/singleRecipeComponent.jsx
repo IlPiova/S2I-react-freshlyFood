@@ -1,13 +1,13 @@
 import { useContext } from "react";
-import { SingleRecipeContext, ImageCardContext } from "../../stores/Contexts";
+import { SingleRecipeContext } from "../../stores/Contexts";
 
 import glutenFree from "../../assets/images/gluten-free.png";
 import dairyFree from "../../assets/images/dairy-free.png";
 import vegan from "../../assets/images/vegan.png";
 
-import "../../style/singleRecipe.scss";
-import Navbar from "./Navbar";
-import ImageCard from "./ImageCard";
+import "./singleRecipe.scss";
+import Navbar from "../Navbar/Navbar";
+import ImageCard from "../ImageCard";
 
 function arrReader(data) {
   return (

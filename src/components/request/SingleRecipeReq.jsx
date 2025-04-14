@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import SingleRecipeComponent from "../uiComponents/singleRecipeComponent";
+import SingleRecipeComponent from "../SingleRecipe/singleRecipeComponent";
 import { SingleRecipeContext } from "../../stores/Contexts";
 import SimilarRecipeReq from "./SimilarRecipesReq";
 

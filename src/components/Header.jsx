@@ -1,4 +1,4 @@
-import RecipeSearch from "../../RecipeSearch";
+import RecipeSearch from "./Searchbar/RecipeSearch";
 
 function Header() {
   return (

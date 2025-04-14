@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { RecipeSearchContext } from "../stores/Contexts";
+import { RecipeSearchContext } from "../../stores/Contexts";
 import { useNavigate } from "react-router-dom";
 
-import "../style/searchBar.scss";
+import "./searchBar.scss";
 
 function RecipeSearch() {
   const { setRecipeName } = useContext(RecipeSearchContext);

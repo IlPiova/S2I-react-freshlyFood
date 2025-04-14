@@ -1,4 +1,4 @@
-import "./style/home.scss";
+import "./components/Home/home.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import {
@@ -12,7 +12,7 @@ import {
 
 import RecipesReq from "./components/request/RecipesReq";
 import SingleRecipeReq from "./components/request/SingleRecipeReq";
-import Home from "./components/uiComponents/Home/Home";
+import Home from "./components/Home/Home";
 
 function App() {
   return (

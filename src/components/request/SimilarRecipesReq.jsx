@@ -2,7 +2,7 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 
 import { SimilarRecipesContext } from "../../stores/Contexts";
-import Cards from "../uiComponents/Cards";
+import Cards from "../Cards/Cards";
 
 function SimilarRecipeReq({ recipeId }) {
   const { similarRecipes, setSimilarRecipes } = useContext(

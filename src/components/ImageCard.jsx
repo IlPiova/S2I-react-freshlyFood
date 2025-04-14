@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect, useContext } from "react";
 
-import { ImageCardContext } from "../../stores/Contexts";
+import { ImageCardContext } from "../stores/Contexts";
 
 function ImageCard({ id }) {
   const apiKey = import.meta.env.VITE_API_KEY;
