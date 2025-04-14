@@ -7,6 +7,7 @@ $secondary-error-color: #f4a261;
   font-family: "Milk-And-Honey";
   src: local("Milk And Honey"),
     url("../assets/fonts/Milk\ And\ Honey.otf") format("opentype");
+  // url("../assets/fonts/Milk\ And\ Honey.otf") format("opentype");
 }
 
 * {
@@ -98,6 +99,7 @@ li {
   -webkit-mask-composite: destination-out;
   mask-composite: exclude, add, add, add, add, add, add;
   -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   animation: l8 3s infinite;
 }
 @keyframes l8 {

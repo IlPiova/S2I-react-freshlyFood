@@ -45,7 +45,7 @@
       font-size: 0.8em;
       color: $primary-color;
       font-family: "Milk-And-Honey";
-      letter-spacing: 0.2em;
+      letter-spacing: 0.05em;
       line-height: 1.25em;
     }
     .recipe-button {
@@ -68,15 +68,21 @@
     .card {
       height: 20em;
       width: 12em;
+      .recipe-title {
+        font-size: 1.2em;
+      }
     }
-  }
-  .recipe-title {
-    font-size: 1.2em;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .recipe-title {
-    font-size: 1.5em;
+  .cards-container {
+    .card {
+      height: 20em;
+      width: 15em;
+      .recipe-title {
+        font-size: 1.5em;
+      }
+    }
   }
 }
